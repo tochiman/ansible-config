@@ -1,0 +1,8 @@
+- hosts: ubuntu-vps
+  gather_facts: False
+  become: yes
+  tasks:
+    - name: 疎通確認（再起動前）
+      ping:
+    - name: シャットダウン
+      community.general.shutdown:

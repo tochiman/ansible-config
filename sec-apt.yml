@@ -1,0 +1,13 @@
+- hosts: security
+  gather_facts: False
+  become: yes
+  serial: 12
+  tasks:
+    - name: 疎通確認
+      ping:
+    - name: apt update
+      apt:
+        update_cache: yes      
+    - name: apt upgrade
+      apt:
+        upgrade: yes

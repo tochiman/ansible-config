@@ -1,0 +1,17 @@
+[pve-fujitsu]
+192.168.0.6 ansible_ssh_user=root
+[pve-dell]
+192.168.0.9 ansible_ssh_user=root
+[monitoring]
+192.168.0.8 ansible_ssh_user=tochiman
+[vm]
+192.168.0.3 ansible_ssh_user=tochiman
+192.168.0.4 ansible_ssh_user=school
+[all]
+192.168.0.6 ansible_ssh_user=root
+192.168.0.9 ansible_ssh_user=root
+192.168.0.8 ansible_ssh_user=tochiman
+192.168.0.3 ansible_ssh_user=tochiman
+192.168.0.4 ansible_ssh_user=school
+[test]
+192.168.0.3 ansible_ssh_user=tochiman

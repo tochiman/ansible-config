@@ -1,0 +1,9 @@
+- hosts: security
+  gather_facts: False
+  become: yes
+  serial: 12
+  tasks:
+    - name: 疎通確認
+      ping:
+    - name: シャットダウン
+      community.general.shutdown:
